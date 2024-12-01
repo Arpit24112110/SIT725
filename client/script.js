@@ -1,12 +1,18 @@
-// Basic JavaScript to handle form submission
+// Initialize Materialize components and handle form submission
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const firstName = document.getElementById("first_name").value;
-        const lastName = document.getElementById("last_name").value;
-        const message = document.getElementById("message").value;
+    const contactForm = document.getElementById("contactForm");
 
-        alert(`Thank you, ${firstName} ${lastName}, for your message: "${message}"`);
+    // Materialize toast on form submission
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page reload
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        // Materialize toast for feedback
+        M.toast({ html: `Thank you, ${name}! We'll contact you at ${email}.` });
+
+        // Reset form
+        this.reset();
     });
 });
