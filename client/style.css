@@ -1,0 +1,59 @@
+/* Background Image */
+body {
+    background: url("car.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Materialize Navbar Styling */
+.nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Materialize Form Section */
+.form-section {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Materialize Input Fields */
+.input-field input,
+textarea {
+    color: black;
+}
+
+/* Materialize Floating Labels and Borders on Focus */
+input:focus + label,
+textarea:focus + label {
+    color: #ffd700 !important;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #ffd700 !important;
+}
+
+/* Right Content Styling */
+.main-content h2 {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.main-content p {
+    text-align: right;
+    margin-top: -10px;
+}
+
+/* Materialize Button Styling */
+.btn {
+    background-color: #ffd700 !important;
+    color: black !important;
+}
+
+/* Materialize Footer Styling */
+.page-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}

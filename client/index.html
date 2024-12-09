@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenTwelve Motors</title>
+    <!-- Linking Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Linking custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Materialize Navbar -->
+    <nav class="nav-extended black">
+        <div class="nav-wrapper center">
+            <a href="#" class="brand-logo yellow-text">ElevenTwelve Motors</a> <!-- Materialize text color class -->
+        </div>
+    </nav>
+
+    <div class="row"> <!-- Materialize grid row -->
+        <!-- Left Section: Form -->
+        <div class="col s12 m4 form-section"> <!-- Materialize grid column -->
+            <h5 class="black-text center-align">Contact Us</h5> <!-- Materialize text color and alignment -->
+            <form id="contactForm">
+                <!-- Materialize input field -->
+                <div class="input-field">
+                    <input id="name" type="text" required>
+                    <label for="name">Name</label> <!-- Materialize floating label -->
+                </div>
+                <!-- Materialize email field -->
+                <div class="input-field">
+                    <input id="email" type="email" required>
+                    <label for="email">Email</label> <!-- Materialize floating label -->
+                </div>
+                <!-- Materialize textarea -->
+                <div class="input-field">
+                    <textarea id="query" class="materialize-textarea" required></textarea> <!-- Materialize textarea class -->
+                    <label for="query">Your Query</label>
+                </div>
+                <!-- Materialize button -->
+                <button type="submit" class="btn yellow black-text">Send</button>
+            </form>
+        </div>
+
+        <!-- Right Section: Welcome Message -->
+        <div class="col s12 m8 main-content"> <!-- Materialize grid column -->
+            <h2>Welcome to ElevenTwelve Motors</h2> <!-- Customized with CSS -->
+            <p>Your luxury car destination.</p>
+        </div>
+    </div>
+
+    <!-- Materialize Footer -->
+    <footer class="page-footer black center">
+        © 2024 ElevenTwelve Motors
+    </footer>
+
+    <!-- Linking Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Linking custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
