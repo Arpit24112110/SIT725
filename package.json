@@ -1,0 +1,30 @@
+{
+  "name": "week6",
+  "version": "1.0.0",
+  "description": "Week 6 project with testing setup using Jest and Supertest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "directories": {
+    "test": "__tests__"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "cross-env": "^7.0.3"
+  },
+  "jest": {
+    "testTimeout": 30000
+  }
+}
